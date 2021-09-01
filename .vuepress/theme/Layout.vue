@@ -207,7 +207,7 @@
 
 	.single-journal .title {
 		font-weight: 600;
-		font-size: 7rem;
+		font-size: 4rem;
 		text-align: left;
 		color: #3f4a71;
 	}
@@ -416,6 +416,7 @@
 .home-page {
 	background: url("/upload/gabe-1.jpg");
 	background-size: cover;
+	background-position: center;
 	height: 100vh;
 }
 @media only screen and (max-width: 600px) { 
