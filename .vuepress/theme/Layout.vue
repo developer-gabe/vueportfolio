@@ -430,7 +430,7 @@
 @media (prefers-color-scheme: dark) { 
 	
 .home-page {
-	background: url("/upload/gabe-dark.jpg");
+	background: url("/upload/photos/DSC02845.jpg");
 	background-size: cover;
 	height: 100vh;
 }
@@ -454,7 +454,7 @@ pre {
 		background: #4a57a146;
 }
 
-h1, h2, p, li, a {
+h1, h2, h3, p, li, a {
 	color: #eee !important;
 }
 
