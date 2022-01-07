@@ -113,7 +113,7 @@
 
   .header {
     display: flex;
-    position: absolute;
+    position: relative;
 		top: 0;
     align-items: center;
     justify-content: space-between;
@@ -148,7 +148,6 @@
 		font-size: 1rem;
 		letter-spacing: 2.5px;
 		font-weight: 800;
-		font-family: Chap;
 		text-transform: uppercase;
 		color: #000;
   }

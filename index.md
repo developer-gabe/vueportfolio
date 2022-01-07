@@ -1,10 +1,6 @@
 ---
 works_index: false
 title: G'd UP FROM THE FEET UP
-
+meta: 
+	-	theme-color: #000
 ---
-<div id="social-grid">
-<a href="https://www.linkedin.com/in/gsous/" target="_blank"><img class="social-icon" src="/upload/linkedin-light.svg"></a>
-<a href="https://www.instagram.com/saucygsous" target="_blank"><img class="social-icon" src="/upload/instagram-light.svg"></a>
-</div>
-

@@ -18,6 +18,7 @@ module.exports = {
 	},
 	plugins: {
 		'vuepress-plugin-reading-time': {},
+		'ScrollReveal': {},
 		'sitemap': {
 			hostname: "https://gabesousa.com"
 		},
