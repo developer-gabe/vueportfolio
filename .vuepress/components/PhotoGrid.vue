@@ -18,15 +18,18 @@
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
-			<video class="half-size" playsinline autoplay muted loop>
-				<source src="/upload/photos/Lake.mp4" type="video/mp4">
-			</video>
+						<img class="half-size" src="/upload/photos/DSC06084.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
 			<img class="half-size" src="/upload/photos/DSC01586.jpg" alt="Rock Climbing.">
 		</div>
-				<div class="photo-container">
+		<div class="photo-container">
 			<img class="full-size" src="/upload/photos/DSC00331.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
+		</div>
+						<div class="photo-container">
+			<img class="wide-size" src="/upload/photos/DSC01527.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
@@ -43,112 +46,112 @@
 			<img class="half-size" src="/upload/photos/DSC00075.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
-				<div class="photo-container">
+		<div class="photo-container">
 			<img class="half-size" src="/upload/photos/rmnp.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
-				<div class="photo-container">
+		<div class="photo-container">
 			<img class="wide-size" src="/upload/photos/DSC03401.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
-		
+		<div class="photo-container">
+			<img class="wide-size" src="/upload/photos/DSC01669.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
+		</div>
+
+
 	</ul>
 </template>
 
 <script>
-  export default {
-  	methods: {
-  		identifyImages: function () {
-  			let images = document.getElementById("photo-list").children;
-  			for (let i = 0; i < images.length; i++) {
+	export default {
+		methods: {
+			identifyImages: function () {
+				let images = document.getElementById("photo-list").children;
+				for (let i = 0; i < images.length; i++) {
 
-  				let height = images[i].children[0].naturalHeight;
-  				let width = images[i].children[0].naturalWidth;
-  				if (height > width) {
-  					images[i].children[0].classList.add("half-size")
-  				} else if (height < width) {
-  					images[i].children[0].classList.add("wide-size")
-  				} else {
-  					images[i].children[0].classList.add("half-size")
-  				}
+					let height = images[i].children[0].naturalHeight;
+					let width = images[i].children[0].naturalWidth;
+					if (height > width) {
+						images[i].children[0].classList.add("half-size")
+					} else if (height < width) {
+						images[i].children[0].classList.add("wide-size")
+					} else {
+						images[i].children[0].classList.add("half-size")
+					}
 
 					console.log(images[i].children[0].naturalHeight)
-  			}
+				}
 				document.addEventListener('contextmenu', event => event.preventDefault());
 
 
-  		}
-  	}
-  }
+			}
+		}
+	}
 </script>
 
 <style scoped>
+	#photo-list {
+		max-width: 800px;
+		margin: auto;
+	}
 
-#photo-list {
-	max-width: 800px;
-	margin: auto;
-}
+	#photo-list video {
+		object-fit: cover;
+		object-position: bottom;
+		border-radius: 0px;
+		height: 500px;
+	}
 
-#photo-list video {
-	object-fit: cover;
-	object-position: bottom;
-	border-radius: 0px;
-	height: 500px;
-}
+	.photo-container {
+		display: inline;
+		width: 100%;
+		position: relative;
+	}
 
-.photo-container {
-	display: inline;
-	width: 100%;
-	position: relative;
-}
+	.photo-container img {
+		object-fit: cover;
+		margin: auto;
+		border-radius: 0px;
+		pointer-events: none;
+	}
 
-.photo-container img {
-	object-fit: cover;
-	margin: auto;
-	border-radius: 0px;
-	pointer-events: none;
-}
+	.half-size {
+		width: calc(50% - 3px);
+		height: 500px;
+	}
 
-.half-size {
-	width: calc(50% - 3px);
-	height: 500px;
-}
+	.wide-size {
+		width: calc(100% - 2px) !important;
+		max-height: 420px;
+	}
 
-.wide-size {
-	width: calc(100% - 2px) !important;
-	max-height: 420px;
-}
+	.full-size {
+		width: calc(100% - 1.5px) !important;
+	}
 
-.full-size {
-	width: calc(100% - 1.5px) !important;
-}
+	.wide-size.bigger {
+		max-height: 600px;
+	}
 
-.wide-size.bigger {
-	max-height: 600px;
-}
-
-@media screen and (max-width: 680px){
-	/* .half-size, .wide-size {
+	@media screen and (max-width: 680px) {
+		/* .half-size, .wide-size {
 		width: 100%;
 	} */
 
-	#photo-list {
-		padding-left: .2rem;
-		padding-right: .12rem
+		#photo-list {
+			padding-left: .2rem;
+			padding-right: .12rem
+		}
+
+		.half-size,
+		#photo-list video {
+			height: 300px;
+		}
+
+		.wide-size {
+			width: 99.6% !important;
+		}
+
 	}
-
-	.half-size, #photo-list video {
-	height: 300px;
-}
-
-.wide-size {
-	width: 99.6% !important;
-}
-
-}
-
-
-
-
-
 </style>
