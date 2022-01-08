@@ -145,7 +145,7 @@
     user-select: none;
     cursor: pointer;
     border-bottom: 1px solid transparent;
-		font-size: 1rem;
+		font-size: .8rem;
 		letter-spacing: 2.5px;
 		font-weight: 800;
 		text-transform: uppercase;

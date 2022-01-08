@@ -2,21 +2,21 @@
 	<div class="home-page">
 		<h4 class="subheader">{{time}}. {{greeting}}.</h4>
 		<h1>Gabe Sousa</h1>
-				<ul class="navigation-list"> 
-					<li> 
-					 <router-link to="/journal">Dev. Journal </router-link>
-					</li>
-					<li> 
-					 <router-link to="/photography">Photography </router-link>
-					</li>
-				</ul>
-				<div id="social-grid">
-					<a href="https://www.linkedin.com/in/gsous/" target="_blank"><img class="social-icon"
-							src="/upload/linkedin.svg"></a>
-					<a href="https://www.instagram.com/saucygsous" target="_blank"><img class="social-icon"
-							src="/upload/instagram.svg"></a>
-				</div>
-			</div>
+		<ul class="navigation-list">
+			<li>
+				<router-link to="/photography">Photography </router-link>
+			</li>
+			<li>
+				<router-link to="/journal">Dev. Journal </router-link>
+			</li>
+		</ul>
+		<div id="social-grid">
+			<a href="https://www.linkedin.com/in/gsous/" target="_blank"><img class="social-icon"
+					src="/upload/linkedin.svg"></a>
+			<a href="https://www.instagram.com/saucygsous" target="_blank"><img class="social-icon"
+					src="/upload/instagram.svg"></a>
+		</div>
+	</div>
 </template>
 
 <script>

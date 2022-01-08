@@ -161,16 +161,20 @@
 			<div v-else-if="$route.path == '/photography/'" class="photography-page">
 				<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 				<Content />
+				<Footer />
 			</div>
 
 			<!-- Journal list -->
 			<div v-if="$route.path === '/journal/'" class="journal-list">
 				<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
 				<Content />
+				<Footer />
 			</div>
 
 			<!-- Single journal -->
-			<div v-if="isSingleJournal" class="single-journal">
+			<div v-if="isSingleJournal">
+				<Navbar :logo="$site.themeConfig.logo" :sticky="$route.path === '/'" />
+
 				<div class="single-journal">
 
 					<h1 class="title">{{ $page.frontmatter.title }}</h1>
@@ -179,11 +183,12 @@
 					<Content />
 					<button type="button" @click="hasHistory() 
     ? $router.go(-1) 
-    : $router.push('/')" class="my-5 btn btn-outline-success">&laquo;
+    : $router.push('/')" class="my-5 btn btn-outline-success back-button">&laquo;
 						Back
 					</button>
 
 				</div>
+								<Footer />
 
 			</div>
 		</div>
@@ -308,9 +313,9 @@
 	}
 
  .single-journal {
-
-    max-width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
+		padding: .8rem;
   }
 	
 
@@ -387,6 +392,10 @@
 		font-weight: 600;
 		margin-bottom: 0;
 		margin-top: 3rem;
+	}
+
+	.back-button {
+		font-size: 1rem;
 	}
 
 	iframe {
@@ -600,6 +609,10 @@ pre {
 
 h1, h2, h3, p, li, a {
 	color: #eee !important;
+}
+
+.footer.text {
+	color: #fff !important;
 }
 
 

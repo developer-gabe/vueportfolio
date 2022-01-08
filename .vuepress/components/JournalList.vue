@@ -33,7 +33,6 @@
 		max-width: 800px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		padding-bottom: 4rem;
 	}
 
 	.title {

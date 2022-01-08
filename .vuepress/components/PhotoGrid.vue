@@ -1,7 +1,7 @@
 <template>
 	<ul id="photo-list">
 		<div class="photo-container">
-			<video playsinline autoplay muted loop poster="/upload/photos/poster.jpg" class="full-size bigger">
+			<video playsinline autoplay muted loop poster="/upload/photos/poster.jpg" class="wide-size bigger">
 				<source src="/upload/photos/Canyon.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -14,7 +14,7 @@
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
-			<img class="full-size" src="/upload/photos/DSC01636.jpg"
+			<img class="wide-size" src="/upload/photos/DSC01636.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
@@ -26,7 +26,7 @@
 			<img class="half-size" src="/upload/photos/DSC01586.jpg" alt="Rock Climbing.">
 		</div>
 				<div class="photo-container">
-			<img class="" src="/upload/photos/DSC00331.jpg"
+			<img class="full-size" src="/upload/photos/DSC00331.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
@@ -36,7 +36,7 @@
 		<div class="photo-container"> <img class="half-size" src="/upload/photos/DSC01000.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away."> </div>
 		<div class="photo-container">
-			<img class="full-size bigger" src="/upload/photos/DSC00236.jpg"
+			<img class="wide-size bigger" src="/upload/photos/DSC00236.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
@@ -48,7 +48,7 @@
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 				<div class="photo-container">
-			<img class="full-size" src="/upload/photos/DSC03401.jpg"
+			<img class="wide-size" src="/upload/photos/DSC03401.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		
@@ -67,7 +67,7 @@
   				if (height > width) {
   					images[i].children[0].classList.add("half-size")
   				} else if (height < width) {
-  					images[i].children[0].classList.add("full-size")
+  					images[i].children[0].classList.add("wide-size")
   				} else {
   					images[i].children[0].classList.add("half-size")
   				}
@@ -114,17 +114,21 @@
 	height: 500px;
 }
 
-.full-size {
+.wide-size {
 	width: calc(100% - 2px) !important;
 	max-height: 420px;
 }
 
-.full-size.bigger {
+.full-size {
+	width: calc(100% - 1.5px) !important;
+}
+
+.wide-size.bigger {
 	max-height: 600px;
 }
 
 @media screen and (max-width: 680px){
-	/* .half-size, .full-size {
+	/* .half-size, .wide-size {
 		width: 100%;
 	} */
 
@@ -137,7 +141,7 @@
 	height: 300px;
 }
 
-.full-size {
+.wide-size {
 	width: 99.6% !important;
 }
 
