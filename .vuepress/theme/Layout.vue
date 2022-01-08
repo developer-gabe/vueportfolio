@@ -580,7 +580,7 @@
 }
 
 .photography-page {
-		background: linear-gradient(-45deg,#000, #05001a, #120225, #000);
+		background: #000;
 }
 
 .single-journal {
