@@ -1,7 +1,7 @@
 <template>
 	<ul id="photo-list">
 		<div class="photo-container">
-			<video playsinline autoplay muted loop poster="/upload/photos/poster.jpg" class="full-size">
+			<video playsinline autoplay muted loop poster="/upload/photos/poster.jpg" class="full-size bigger">
 				<source src="/upload/photos/Canyon.mp4" type="video/mp4">
 			</video>
 		</div>
