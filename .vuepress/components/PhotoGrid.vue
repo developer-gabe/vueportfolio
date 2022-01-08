@@ -6,13 +6,16 @@
 			</video>
 		</div>
 		<div class="photo-container">
-			<img class="half-size" src="/upload/photos/tall.jpg" alt="A photo of sand dunes, with people at the top shot from far away.">
+			<img class="half-size" src="/upload/photos/tall.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
-			<img class="half-size" src="/upload/photos/DSC01586.jpg" alt="A photo of sand dunes, with people at the top shot from far away.">
+			<img class="half-size" src="/upload/photos/DSC06100.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
-			<img class="full-size" src="/upload/photos/DSC01636.jpg" alt="A photo of sand dunes, with people at the top shot from far away.">
+			<img class="full-size" src="/upload/photos/DSC01636.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
 			<video class="half-size" playsinline autoplay muted loop>
@@ -20,19 +23,35 @@
 			</video>
 		</div>
 		<div class="photo-container">
-			<img class="half-size" src="/upload/photos/_DSC0030.jpg" alt="Nickki.">
+			<img class="half-size" src="/upload/photos/DSC01586.jpg" alt="Rock Climbing.">
+		</div>
+				<div class="photo-container">
+			<img class="" src="/upload/photos/DSC00331.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
-			<img class="half-size" src="/upload/photos/rmnp.jpg" alt="A photo of sand dunes, with people at the top shot from far away.">
+			<img class="half-size" src="/upload/photos/DSC00838.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container"> <img class="half-size" src="/upload/photos/DSC01000.jpg"
 				alt="A photo of sand dunes, with people at the top shot from far away."> </div>
 		<div class="photo-container">
-			<img class="full-size" src="/upload/photos/DSC03401.jpg" alt="A photo of sand dunes, with people at the top shot from far away.">
+			<img class="full-size bigger" src="/upload/photos/DSC00236.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
 		<div class="photo-container">
-			<img class="full-size" src="/upload/photos/DSC00191.jpg" alt="A photo of sand dunes, with people at the top shot from far away.">
+			<img class="half-size" src="/upload/photos/DSC00075.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
 		</div>
+				<div class="photo-container">
+			<img class="half-size" src="/upload/photos/rmnp.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
+		</div>
+				<div class="photo-container">
+			<img class="full-size" src="/upload/photos/DSC03401.jpg"
+				alt="A photo of sand dunes, with people at the top shot from far away.">
+		</div>
+		
 	</ul>
 </template>
 
@@ -98,6 +117,10 @@
 .full-size {
 	width: calc(100% - 2px) !important;
 	max-height: 420px;
+}
+
+.full-size.bigger {
+	max-height: 600px;
 }
 
 @media screen and (max-width: 680px){
