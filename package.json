@@ -10,7 +10,7 @@
   "dependencies": {
     "prismjs": "^1.19.0",
     "scrollreveal": "^4.0.9",
-    "three": "^0.126.1",
+    "three": "^0.137.0",
     "vue-carousel": "^0.18.0",
     "vuepress": "^1.2.0",
     "vuepress-plugin-img-lazy": "^1.0.3",
